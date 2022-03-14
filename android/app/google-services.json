@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "1002837528536",
+    "project_id": "flitterx-mobile",
+    "storage_bucket": "flitterx-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1002837528536:android:e1f424743afac7edc3acad",
+        "android_client_info": {
+          "package_name": "com.flitterx.flitterx_mobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1002837528536-jv3infue26dsfgnuth38rcu3r43jfjtc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.flitterx.flitterx_mobile",
+            "certificate_hash": "9a31e3ee89699b243582202170a724366d7b43ba"
+          }
+        },
+        {
+          "client_id": "1002837528536-7l9if12c8tkaa20ah2r5e8ad8e48bov2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1P8mHq2CE7xkej0FL8e7e8RTlVtwmilQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1002837528536-7l9if12c8tkaa20ah2r5e8ad8e48bov2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
