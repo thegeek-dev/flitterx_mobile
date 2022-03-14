@@ -19,7 +19,7 @@ class LandingPage extends StatefulWidget {
 class _LandingPageState extends State<LandingPage> {
   @override
   Widget build(BuildContext context) {
-    String photoUrl = FirebaseAuth.instance.currentUser.photoURL ?? "null";
+    String photoUrl = /*FirebaseAuth.instance.currentUser.photoURL ??*/ "null";
     Color accent = const Color.fromRGBO(0, 0, 75, 1);
     List tmtData = trnmtData;
     Size size = MediaQuery.of(context).size;

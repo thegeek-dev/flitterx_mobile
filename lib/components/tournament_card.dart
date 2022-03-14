@@ -1,3 +1,4 @@
+import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flitterx_mobile/samples/tournament_data.dart';
 import 'package:flutter/material.dart';
 
@@ -35,12 +36,21 @@ class TournamentCard extends StatelessWidget {
               Center(
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(30),
-                  child: Image.network(
+                  child: CachedNetworkImage(
+                    width: size.width / 1.2,
+                    height: size.height / 3,
+                    imageUrl: imgUrl,
+                    placeholder: (context, url) => CircularProgressIndicator(),
+                    errorWidget: (context, url, error) => Icon(Icons.error),
+                    fit: BoxFit.fitHeight,
+                  )
+                  /*Image.network(
                     imgUrl,
                     width: size.width / 1.2,
                     height: size.height / 3,
                     fit: BoxFit.fitHeight,
-                  ),
+                  )*/
+                  ,
                 ),
               ),
               Column(
