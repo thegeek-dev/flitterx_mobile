@@ -40,7 +40,8 @@ dependencies:
   mdi: ^5.0.0-nullsafety.0
   cloud_firestore: ^3.1.10
   cached_network_image: ^3.2.0
-
+  razorpay_flutter: ^1.2.3
+  
 dev_dependencies:
   flutter_test:
     sdk: flutter
