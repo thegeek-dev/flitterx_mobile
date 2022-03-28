@@ -21,6 +21,7 @@ class _LandingPageState extends State<LandingPage> {
   Widget build(BuildContext context) {
     String photoUrl = /*FirebaseAuth.instance.currentUser.photoURL ??*/ "null";
     Color accent = const Color.fromRGBO(0, 0, 75, 1);
+    Color backgroundClr = const Color.fromRGBO(0, 0, 20, 1);
     List tmtData = trnmtData;
     Size size = MediaQuery.of(context).size;
     return SizedBox(
@@ -30,21 +31,22 @@ class _LandingPageState extends State<LandingPage> {
             child: Scaffold(
           backgroundColor: const Color.fromRGBO(0, 0, 20, 1),
           appBar: AppBar(
-            backgroundColor: accent,
+            centerTitle: true,
+            backgroundColor: backgroundClr,
             title: const Text("FlitterX"),
-            actions: [
-              photoUrl != "null"
-                  ? CircleAvatar(
-                      backgroundImage: NetworkImage(
-                        photoUrl,
-                      ),
-                    )
-                  : IconButton(
-                      onPressed: () {}, icon: const Icon(Icons.person)),
-              const SizedBox(
-                width: 20,
-              )
-            ],
+            // actions: [
+            //   photoUrl != "null"
+            //       ? CircleAvatar(
+            //           backgroundImage: NetworkImage(
+            //             photoUrl,
+            //           ),
+            //         )
+            //       : IconButton(
+            //           onPressed: () {}, icon: const Icon(Icons.person)),
+            //   const SizedBox(
+            //     width: 20,
+            //   )
+            // ],
           ),
           // bottomNavigationBar: BottomAppBar(
           //   elevation: 15,
